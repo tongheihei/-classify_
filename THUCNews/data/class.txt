@@ -1,10 +1,10 @@
-finance
-realty
-stocks
-education
-science
-society
-politics
-sports
-game
-entertainment
+what
+when
+where
+why
+which
+whether
+how many
+how much
+how about
+contrary

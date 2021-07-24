@@ -42,12 +42,20 @@ def build_dataset(config, ues_word):
 
     def load_dataset(path, pad_size=32):
         contents = []
+        nowtot=0
+        #print("******************************")
+        #print(path)
+        #print("******************************")
         with open(path, 'r', encoding='UTF-8') as f:
             for line in tqdm(f):
                 lin = line.strip()
+                
                 if not lin:
                     continue
                 content, label = lin.split('\t')
+                nowtot += 1
+                print(nowtot)
+                print(content,label)
                 words_line = []
                 token = tokenizer(content)
                 seq_len = len(token)
